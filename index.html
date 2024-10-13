@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>y New Website</title>
+    <title>My New Website</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -25,12 +25,25 @@
 
     <section id="contact">
         <h2>Contact me</h2>
-        <form id="email" action="https://formspree.io/f/myzyykeo" method="POST"> 
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-        </form>
+        <div id="form_frame">
+            <form id="submission" action="https://formspree.io/f/myzyykeo" method="POST"> 
+                <section>
+                    <label class="label" for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </section>
+                <section>
+                    <label class="input" for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                </section>
+            </form>
+            <button id="send_mail" type="submit">SEND</button>
+        </div>
+        
     </section>
 
+    <footer>
+        <p>© 2024 My New Website Productions</p>
+    </footer>
     
 </body>
 </html>
